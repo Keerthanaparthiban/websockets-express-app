@@ -1,10 +1,11 @@
+// Make connection
 var socket = io.connect('http://localhost:4000');
 
 // Query DOM
 var message = document.getElementById('message'),
-  btn = document.getElementById('send'),
   handle = document.getElementById('handle'),
-  output = document.getElementById('document');
+  btn = document.getElementById('send'),
+  output = document.getElementById('output');
 
 // Emit events
 btn.addEventListener('click', function () {
